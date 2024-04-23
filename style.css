@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    padding: 0;
+    position: relative; /* Establece el cuerpo como relativo para que los elementos absolutos se posicionen con respecto a él */
+}
+
+.header-top {
+    background-color: black;
+    padding: 10px 20px;
+    text-align: center; /* Centra el contenido horizontalmente */
+}
+
+
+.container {
+    background-color: black; /* Añade fondo negro al contenedor */
+    padding: 5px; /* Ajusta el espacio de relleno */
+     position: relative; /* Establece el contenedor como relativo */
+}
+
+.logo-1 {
+    max-width: 200px;
+    margin-top: -50px;
+ }
+
+.menu-1 li {
+    display: inline;
+    margin-left: 15px; /* Reduce el margen entre elementos del menú en pantallas pequeñas */
+    font-size: 16px; /* Reduce el tamaño del texto del menú en pantallas pequeñas */
+   
+}
+
+.menu-1 {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: black; /* Añade fondo negro al bloque de menú */
+    padding-top: 10px; /* Ajusta el espacio de relleno superior */
+    padding-bottom: 10px; /* Ajusta el espacio de relleno inferior */
+    text-align: right; /* Ajusta el texto del menú a la derecha */
+}
+
+
+.menu-1 li a {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    color: #e3a233;
+    margin-left: 20px;
+    text-align: left; /* Ajusta el texto del menú a la izquierda */
+
+
+}
+
+/* fragmento para la primera pregunta y el parrafo*/
+
+h2 {
+    color:black; /* Cambia el color del texto del h2 según tus preferencias */
+    font-size: 28px; /* Ajusta el tamaño del texto del h2 según tus preferencias */
+    font-family: Arial, sans-serif; /* Cambia el estilo de la fuente del h2 según tus preferencias */
+    text-align: left; /* Alinea el texto del h2 a la izquierda */
+    margin-left: 20px; /* Agrega un margen izquierdo para separarlo del borde de la pantalla */
+    font-size: 25px;
+}
+
+
+.parrafo-espaciado {
+    color: black#333; /* Cambia el color del texto del párrafo según tus preferencias */
+    font-size: 16px; /* Ajusta el tamaño del texto del párrafo según tus preferencias */
+    font-family: Arial, sans-serif; /* Cambia el estilo de la fuente del párrafo según tus preferencias */
+    margin-left: 20px; /* Agrega un margen izquierdo para separarlo del borde de la pantalla */
+    max-width: 600px; /* Establece un ancho máximo para evitar que el párrafo se extienda demasiado */
+
+}
+
+.separador {
+    margin-top:25px;
+
+}
+
+
+
+.imagen-con-pregunta h3 {
+    position: relative;
+    color:black; /* Cambia el color del texto del h3 */
+    font-size: 24px; /* Aumenta el tamaño del texto del h3 */
+    font-family: Arial, sans-serif; /* Cambia el estilo de la fuente del h3 */
+    text-align: center; /* Centra horizontalmente el texto del h3 */
+}
+
+
+/*segunta imagen*/    
+
+.imagen {
+    width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+    height: auto; /* Para mantener la proporción de aspecto */
+    display: block; /* Asegura que la imagen se muestre como un bloque */
+    margin-top: 25px;  /* Ajusta esta cantidad según sea necesario para mover la imagen más abajo */
+
+
+}
+/*modulo de preguntas*/
+.imagen-con-pregunta input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333333;
+    color: rgba(133, 237, 29, 0.915);
+    box-sizing: center;
+}
+
+.pregunta {
+    position: absolute;
+    top: 10px; /* Ajusta la posición vertical según sea necesario */
+    left: 10px; /* Ajusta la posición horizontal según sea necesario */
+    color: white; /* Color del texto en blanco */
+    font-size: 18px; /* Tamaño de fuente según sea necesario */
+    font-family: Arial, sans-serif; /* Fuente según sea necesario */
+    margin: 0; /* Elimina el margen predeterminado del h3 */
+    padding: 0; /* Elimina el relleno predeterminado del h3 */
+    border: 1px solid red; /* Agrega un borde rojo para verificar la posición */
+}
+
+
+.texto-con-fondo p {
+   text-align: center;
+   
+
+}
+/*fragmento del titulo*/
+.title {
+    color:#e3a233 ;
+    margin: 0; /* Elimina el margen predeterminado del título */
+    text-align: center;
+    position: absolute; /* Establece la posición absoluta */
+    top: 50%; /* Ubica el título en el 50% del eje vertical */
+    left: 50%; /* Ubica el título en el 50% del eje horizontal */
+    transform: translate(-50%, -50%); /* Centra el título completamente */
+    font-family:'Arial', sans-serif ; /* Estilo de letra */
+    font-weight: bold;
+    font-size: 55px; /* Tamaño de la letra */
+    margin: 0; /* Elimina el margen predeterminado del título */
+
+}
+/*fragmento de la firma*/
+.tag {
+    text-align: center;
+    margin-top: 40px;
+    background-color: color-mix(in srgb, color percentage, color percentage);
+}
+
+
