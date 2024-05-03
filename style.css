@@ -91,7 +91,6 @@ h2 {
     font-family: Arial, sans-serif; /* Cambia el estilo de la fuente del h2 según tus preferencias */
     text-align: left; /* Alinea el texto del h2 a la izquierda */
     margin-left: 20px; /* Agrega un margen izquierdo para separarlo del borde de la pantalla */
-    font-size: 25px;
     margin-bottom: 20px; /* Agrega un margen inferior para crear espacio */
     display: block; /* Opcional: puedes usar 'inline-block' según el efecto deseado */
 }
@@ -99,7 +98,7 @@ h2 {
 
 
 
-.parrafo--lespaciado {
+.contenido .parrafo--lespaciado {
     color: black; /* Cambia el color del texto del párrafo según tus preferencias */
     font-size: 20px; /* Ajusta el tamaño del texto del párrafo según tus preferencias */
     font-family: Arial, sans-serif; /* Cambia el estilo de la fuente del párrafo según tus preferencias */
@@ -118,11 +117,16 @@ h2 {
 
 
 .imagen-con-pregunta h3 {
-    position: relative;
-    color:black; /* Cambia el color del texto del h3 */
-    font-size: 24px; /* Aumenta el tamaño del texto del h3 */
+    
+    color:white; /* Cambia el color del texto del h3 */
+    font-size: 28px; /* Aumenta el tamaño del texto del h3 */
     font-family: Arial, sans-serif; /* Cambia el estilo de la fuente del h3 */
-    text-align: center; /* Centra horizontalmente el texto del h3 */
+    text-align: left; /* Centra horizontalmente el texto del h3 */
+    margin: 20px 0; /* Agrega espacio vertical alrededor del h3 */
+    padding-left: 20px; /* Agrega espacio a la izquierda del h3 */
+    line-height: 1.5; /* Aumenta la altura de línea del texto del h3 */
+
+
 }
 
 
@@ -171,29 +175,69 @@ h2 {
 
 }
 
-
-#imagen-electrico {
-    /* Estilos específicos para la imagen eléctrica */
-    /* Puedes ajustar estos estilos según sea necesario */
-    max-width: 50%; /* La imagen ocupará el 100% del ancho del contenedor */
-    height: auto; /* Para mantener la proporción de aspecto */
-    
-    
-}
-
-#imagen-electrico img {
-    max-width: 50%; /* Establece el ancho máximo de la imagen como el 100% del ancho del contenedor */
-    height: auto; /* Mantiene la proporción de aspecto de la imagen */
-    
-}
-
 .contenedor {
-    overflow: auto; /* Esto evita que los elementos posteriores se coloquen al lado de la imagen */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch; /* Alinear las columnas */
+    background-color: #f9f9f9; /* Color de fondo */
+    background-image: url('images/imgCable.jpg'); /* Imagen de fondo */
+    background-size: cover; /* Ajustar la imagen de fondo al contenedor */
+    background-position: center; /* Centrar la imagen de fondo */
+
+
 }
 
-#imagenlelectr {
-    float: left; /* La imagen se colocará a la izquierda */
-    margin-right: 20px; /* Espacio entre la imagen y el párrafo */
+.columna {
+    width: calc(50% - 10%); /* Cada columna ocupa el 50% del ancho */
+    padding: 20px; /* Añade espacio alrededor de los elementos */
+    margin: 0 5px; /* Margen de 5px a cada lado para separar las columnas */
+}
+
+.img {
+    max-width: 100%; /* La imagen se ajusta al ancho de la columna */
+    height: auto; /* La altura de la imagen se ajusta automáticamente */
+}
+
+.contenido {
+    background-color: rgba(255, 255, 255, 0.8); /* Color de fondo con transparencia */
+    padding: 20px; /* Espaciado dentro del contenido */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+h2 {
+    color: #333; /* Color del texto del título */
+    font-size: 24px; /* Tamaño de fuente del título */
+    margin-bottom: 10px; /* Espacio entre el título y el párrafo */
+}
+
+
+.contenedor-imagen {
+    position: relative;
+}
+
+.imagen-con-transparencia {
+    width: 100%;
+    height: auto;
+    display: block; 
+    opacity: 0.5; /* Ajusta la transparencia de la imagen */
+}
+
+
+.contenido-imagen {
+    position: absolute;
+    bottom: 20px; /* Ajusta la posición vertical según sea necesario */
+    left: 20px; /* Ajusta la posición horizontal según sea necesario */
+    color: white; /* Cambia el color del texto según tus preferencias */
+}
+
+.pregunta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white; /* Cambia el color del texto de la pregunta */
 }
 
 
