@@ -1,252 +1,276 @@
+
+
 body {
-    margin: 0;
-    padding: 0;
-    position: relative; /* Establece el cuerpo como relativo para que los elementos absolutos se posicionen con respecto a él */
+  margin: 0;
+  padding: 0;
+  position: relative; /* Establece el cuerpo como relativo para que los elementos absolutos se posicionen con respecto a él */
 }
 
-  
 .header-top {
-    background-color: wheat;
-    padding: 10px 20px;
-    text-align: center; /* Centra el contenido horizontalmente */
+  background-color: wheat;
+  padding: 10px 20px;
+  text-align: center; /* Centra el contenido horizontalmente */
 }
-
 
 .container {
-    background-color: black; /* Añade fondo negro al contenedor */
-    padding: 5px; /* Ajusta el espacio de relleno */
-     position: relative; /* Establece el contenedor como relativo */
+  background-color: black; /* Añade fondo negro al contenedor */
+  padding: 5px; /* Ajusta el espacio de relleno */
+  position: relative; /* Establece el contenedor como relativo */
 }
 
 .logo-1 {
-    position: relative;
-    z-index: 2;
-    max-width: 300px;
-    margin-top: -50px;
- }
+  position: relative;
+  z-index: 2;
+  max-width: 300px;
+  margin-top: -20px;
+}
 
 .menu-1 li {
-    display: inline;
-    margin-left: 15px; /* Reduce el margen entre elementos del menú en pantallas pequeñas */
-    font-size: 16px; /* Reduce el tamaño del texto del menú en pantallas pequeñas */
-   
+  display: inline;
+  margin-left: 15px; /* Reduce el margen entre elementos del menú en pantallas pequeñas */
+  font-size: 16px; /* Reduce el tamaño del texto del menú en pantallas pequeñas */
 }
 
 .menu-1 {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    background-color: black; /* Añade fondo negro al bloque de menú */
-    padding-top: 10px; /* Ajusta el espacio de relleno superior */
-    padding-bottom: 10px; /* Ajusta el espacio de relleno inferior */
-    text-align: right; /* Ajusta el texto del menú a la derecha */
-    position: relative; /* Establece la posición relativa para que los elementos absolutos se posicionen con respecto a él */
-    
-}
-
-/* Estilos para los botones de inicio de sesión */
-
-.login-buttons-container {
-    display: inline-block; /* Muestra el contenedor como un bloque en línea */
-    margin-left: 20px; /* Ajusta el margen izquierdo según sea necesario */
-    margin-top: 20px;/* Ajusta el margen superior según sea necesario */
-}
-
-.login-buttons {
-    position: absolute;
-    top: 100px;
-    right: 20px;
-    z-index: 1;
-    display: inline-block;/*Muestra el contenedor de botones como un bloque en línea */
-    background-color: black; /* Añade fondo negro al contenedor de los botones */
-    padding: 5px; /* Ajusta el espacio de relleno */
-    text-align: center; /* Alinea los botones al centro */
-    margin-left: 20px; /* Ajusta el margen izquierdo según sea necesario */
-    margin-top: 10px;/* Ajusta el margen superior según sea necesario */
-}
-
-.login-buttons button {
-    display: inline-block; /* Muestra los botones como bloques para que se apilen horizontalmente*/
-    margin-bottom: 10px; /* Espacio entre los botones */
-    margin-left: 10px;  /* Ajusta el margen izquierdo entre los botones según sea necesario */
-    width: auto; /* Ajusta el ancho de los botones automaticamenet */
-    padding: 8px 16px;/* Ajusta el relleno de los botones */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: black; /* Añade fondo negro al bloque de menú */
+  padding-top: 10px; /* Ajusta el espacio de relleno superior */
+  padding-bottom: 10px; /* Ajusta el espacio de relleno inferior */
+  text-align: right; /* Ajusta el texto del menú a la derecha */
+  position: relative; /* Establece la posición relativa para que los elementos absolutos se posicionen con respecto a él */
 }
 
 .menu-1 li a {
-    text-decoration: none;
-
-    color: #e3a233;
-    margin-left: 20px;
-    text-align: left; /* Ajusta el texto del menú a la izquierda */
-
-    
+  text-decoration: none;
+  color: #e3a233;
+  margin-left: 20px;
+  text-align: left; /* Ajusta el texto del menú a la izquierda */
+  font-size: 25px; /* Cambia el tamaño de fuente de los elementos del menú */
+  border: 2px solid #e3a233;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 100px; /* Ajusta el margen superior para separar del borde superior */
+  transition: background-color 0.3s, color 0.3s; /* Agrega transición suave */
 }
 
-/* fragmento para la primera pregunta y el parrafo*/
+.menu-1 li a:hover {
+  background-color: #ffc107; /* Cambia el color de fondo al pasar el mouse */
+  color: #fff; /* Cambia el color del texto al pasar el mouse */
+}
 
 h2 {
-    color:black; /* Cambia el color del texto del h2 según tus preferencias */
-    font-size: 28px; /* Ajusta el tamaño del texto del h2 según tus preferencias */
-    font-family: Arial, sans-serif; /* Cambia el estilo de la fuente del h2 según tus preferencias */
-    text-align: left; /* Alinea el texto del h2 a la izquierda */
-    margin-left: 20px; /* Agrega un margen izquierdo para separarlo del borde de la pantalla */
-    margin-bottom: 20px; /* Agrega un margen inferior para crear espacio */
-    display: block; /* Opcional: puedes usar 'inline-block' según el efecto deseado */
+  color: black; /* Cambia el color del texto del h2 según tus preferencias */
+  font-size: 28px; /* Ajusta el tamaño del texto del h2 según tus preferencias */
+  font-family: Arial, sans-serif; /* Cambia el estilo de la fuente del h2 según tus preferencias */
+  text-align: left; /* Alinea el texto del h2 a la izquierda */
+  margin-left: 20px; /* Agrega un margen izquierdo para separarlo del borde de la pantalla */
+  margin-bottom: 20px; /* Agrega un margen inferior para crear espacio */
+  display: block; /* Opcional: puedes usar 'inline-block' según el efecto deseado */
 }
 
-
-
-
-.contenido .parrafo--lespaciado {
-    color: black; /* Cambia el color del texto del párrafo según tus preferencias */
-    font-size: 20px; /* Ajusta el tamaño del texto del párrafo según tus preferencias */
-    font-family: Arial, sans-serif; /* Cambia el estilo de la fuente del párrafo según tus preferencias */
-    margin-left: 20px; /* Agrega un margen izquierdo para separarlo del borde de la pantalla */
-    max-width: 600px; /* Establece un ancho máximo para evitar que el párrafo se extienda demasiado */
-
+.respuesta {
+  margin-top: 40px; /* Ajusta el margen superior según sea necesario */
 }
 
-
-
-.separador {
-    display: block; /* Opcional: puedes usar 'inline-block' según el efecto deseado */
-    margin-bottom: 20px; /* Ajusta según sea necesario */
+.respuesta h3 {
+  font-size: 24px;
 }
 
+.respuestas-container {
+  border-radius: 5px; /* Añade bordes redondeados */
+  padding: 10px; /* Añade espacio interno */
+  background-color: black(249, 249, 249, 0.8); /* Cambia el color de fondo con transparencia */
+}
 
+.respuestas-container p {
+  margin: 0; /* Elimina el margen */
+  padding: 5px 0; /* Añade espacio entre respuestas */
+}
+
+.contenido .parrafo-espaciado {
+  color: black; /* Cambia el color del texto del párrafo según tus preferencias */
+  font-size: 20px; /* Ajusta el tamaño del texto del párrafo según tus preferencias */
+  font-family: Arial, sans-serif; /* Cambia el estilo de la fuente del párrafo según tus preferencias */
+  margin-left: 20px; /* Agrega un margen izquierdo para separarlo del borde de la pantalla */
+  max-width: 600px; /* Establece un ancho máximo para evitar que el párrafo se extienda demasiado */
+}
+
+.imagen-con-pregunta {
+  position: relative; /* Establece la posición relativa para que los elementos absolutos se posicionen con respecto a él */
+  display: flex; /* Muestra el contenedor como un bloque en línea */
+}
+
+.imagen-con-pregunta .contenido-imagen {
+  position: absolute; /* Establece la posición absoluta para colocar la pregunta encima de la imagen */
+  top: 36%; /* Coloca la pregunta en la mitad superior del contenedor */
+  left: 15%; /* Centra la pregunta horizontalmente */
+  transform: translate(-50%, -50%); /* Centra la pregunta verticalmente */
+  padding: 20px; /* Ajusta el espacio alrededor de la pregunta */
+  color: white; /* Color del texto de la pregunta */
+}
 
 .imagen-con-pregunta h3 {
-    
-    color:white; /* Cambia el color del texto del h3 */
-    font-size: 28px; /* Aumenta el tamaño del texto del h3 */
-    font-family: Arial, sans-serif; /* Cambia el estilo de la fuente del h3 */
-    text-align: left; /* Centra horizontalmente el texto del h3 */
-    margin: 20px 0; /* Agrega espacio vertical alrededor del h3 */
-    padding-left: 20px; /* Agrega espacio a la izquierda del h3 */
-    line-height: 1.5; /* Aumenta la altura de línea del texto del h3 */
-
-
+  margin: 0; /* Elimina el margen predeterminado del título */
+  font-size: 25px; /* Tamaño de la fuente del título */
+  text-align: center; /* Alinea el texto del título al centro */
 }
-
-
-/*segunta imagen*/    
 
 .imagen {
-    width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
-    height: auto; /* Para mantener la proporción de aspecto */
-    display: block; /* Asegura que la imagen se muestre como un bloque */
-    margin-top: 25px;  /* Ajusta esta cantidad según sea necesario para mover la imagen más abajo */
-
-
+  width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+  height: auto; /* Para mantener la proporción de aspecto */
+  display: block; /* Asegura que la imagen se muestre como un bloque */
+  margin-top: 25px; /* Ajusta esta cantidad según sea necesario para mover la imagen más abajo */
 }
-/*modulo de preguntas*/
+
 .imagen-con-pregunta input[type="text"] {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: rgb(240, 131, 131);
-    color: white;
-    box-sizing: center;
+  width: calc(100% - 20px); /* Reducimos el ancho para dejar espacio para el borde */
+  padding: 10px; /* Ajustamos el relleno para mejorar la apariencia */
+  border: 2px solid #f08383; /* Agregamos un borde de 2px sólido */
+  border-radius: 8px; /* Aumentamos el radio del borde para hacerlo más suave */
+  background-color: #f6f6f6; /* Cambiamos el color de fondo para que sea más claro */
+  color: #333; /* Cambiamos el color del texto para que sea más oscuro */
+  box-sizing: border-box; /* Hacemos que el tamaño total incluya el borde */
+  transition: border-color 0.3s ease; /* Agregamos una transición para suavizar el cambio de color del borde */
 }
 
+.imagen-con-pregunta input[type="text"]:focus {
+  border-color: #f08383; /* Cambiamos el color del borde cuando el input está enfocado */
+  outline: none; /* Quitamos el contorno predeterminado */
+}
 
-
+.input-pregunta {
+  margin-top: 20px; /* Ajusta este valor según sea necesario para separar del bloque */
+  margin-left: 100px; /* Ajusta este valor según sea necesario */
+}
 
 .texto-con-fondo p {
-   text-align: center;
-   
-
+  text-align: center;
 }
-/*fragmento del titulo*/
-.title {
-    color:#e3a233 ;
-    margin: 0; /* Elimina el margen predeterminado del título */
-    text-align: center;
-    position: absolute; /* Establece la posición absoluta */
-    top: 50%; /* Ubica el título en el 50% del eje vertical */
-    left: 50%; /* Ubica el título en el 50% del eje horizontal */
-    transform: translate(-50%, -50%); /* Centra el título completamente */
-    font-family:'Arial', sans-serif ; /* Estilo de letra */
-    font-weight: bold;
-    font-size: 55px; /* Tamaño de la letra */
-    margin: 0; /* Elimina el margen predeterminado del título */
 
+.title {
+  color: #e3a233;
+  margin: 0; /* Elimina el margen predeterminado del título */
+  text-align: center;
+  position: absolute; /* Establece la posición absoluta */
+  top: 50%; /* Ubica el título en el 50% del eje vertical */
+  left: 50%; /* Ubica el título en el 50% del eje horizontal */
+  transform: translate(-50%, -50%); /* Centra el título completamente */
+  font-family: 'Arial', sans-serif; /* Estilo de letra */
+  font-weight: bold;
+  font-size: 55px; /* Tamaño de la letra */
 }
 
 .contenedor {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: stretch; /* Alinear las columnas */
-    background-color: #f9f9f9; /* Color de fondo */
-    background-image: url('images/imgCable.jpg'); /* Imagen de fondo */
-    background-size: cover; /* Ajustar la imagen de fondo al contenedor */
-    background-position: center; /* Centrar la imagen de fondo */
-
-
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-top: 20px;
 }
 
 .columna {
-    width: calc(50% - 10%); /* Cada columna ocupa el 50% del ancho */
-    padding: 20px; /* Añade espacio alrededor de los elementos */
-    margin: 0 5px; /* Margen de 5px a cada lado para separar las columnas */
+  width: 50%;
 }
 
-.img {
-    max-width: 100%; /* La imagen se ajusta al ancho de la columna */
-    height: auto; /* La altura de la imagen se ajusta automáticamente */
+.columna img {
+  width: 80%; /* Ajusta el ancho máximo de la imagen al 100% del contenedor */
+  height: auto; /* La altura se ajusta automáticamente para mantener la proporción */
 }
 
 .contenido {
-    background-color: rgba(255, 255, 255, 0.8); /* Color de fondo con transparencia */
-    padding: 20px; /* Espaciado dentro del contenido */
-    border-radius: 10px; /* Bordes redondeados */
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
 }
+
+.contenido h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.contenido p {
+  color: #333;
+  font-size: 24px;
+  line-height: 1.5; /* Espaciado entre líneas */
+  text-align: justify; /* Alineación del texto */
+  margin-bottom: 20px; /* Espaciado en la parte inferior del párrafo */
+  padding: 10px; /* Espaciado dentro del párrafo */
+  border-radius: 5px; /* Bordes redondeados */
+  background-color: #f9f9f9; /* Color de fondo */
+}
+
+.contenido .parrafo-especifico {
+  font-size: 50px; /* Tamaño de fuente para el párrafo específico dentro de .contenido */
+}
+
 
 h2 {
-    color: #333; /* Color del texto del título */
-    font-size: 24px; /* Tamaño de fuente del título */
-    margin-bottom: 10px; /* Espacio entre el título y el párrafo */
+  color: #333; /* Color del texto del título */
+  font-size: 24px; /* Tamaño de fuente del título */
+  margin-bottom: 10px; /* Espacio entre el título y el párrafo */
 }
 
 
-.contenedor-imagen {
-    position: relative;
-}
 
 .imagen-con-transparencia {
-    width: 100%;
-    height: auto;
-    display: block; 
-    opacity: 0.5; /* Ajusta la transparencia de la imagen */
-}
-
-
-.contenido-imagen {
-    position: absolute;
-    bottom: 20px; /* Ajusta la posición vertical según sea necesario */
-    left: 20px; /* Ajusta la posición horizontal según sea necesario */
-    color: white; /* Cambia el color del texto según tus preferencias */
-}
-
-.pregunta {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white; /* Cambia el color del texto de la pregunta */
+  width: 100%;
+  height: auto;
+  display: block; 
+  opacity: 0.5; /* Ajusta la transparencia de la imagen */
 }
 
 
 /*fragmento de la firma*/
 .tag {
-    text-align: center;
-    margin-top: 40px;
-    background-color: color-mix(in srgb, color percentage, color percentage);
+  text-align: center;
+  margin-top: 40px;
+  background-color: color-mix(in srgb, color percentage, color percentage);
 
 }
+/*Media query para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+  .menu-1 li {
+    margin-left: 10px; /* Reducimos el margen entre elementos del menú en pantallas pequeñas */
+    font-size: 14px; /* Reducimos el tamaño del texto del menú en pantallas pequeñas */
+  }
 
+  .login-buttons-container {
+    margin-left: 10px; /* Ajustamos el margen izquierdo de los botones de inicio de sesión */
+    margin-top: 10px; /* Ajustamos el margen superior de los botones de inicio de sesión */
+  }
 
+  .parrafo-espaciado {
+    font-size: 16px; /* Reducimos el tamaño del texto del párrafo en pantallas pequeñas */
+    margin-left: 10px; /* Ajustamos el margen izquierdo del párrafo en pantallas pequeñas */
+  }
+
+  .imagen-con-pregunta .contenido-imagen {
+    top: 50%; /* Colocamos la pregunta más abajo en pantallas pequeñas */
+    left: 50%; /* Centramos la pregunta horizontalmente en pantallas pequeñas */
+    transform: translate(-50%, -50%); /* Centramos la pregunta verticalmente en pantallas pequeñas */
+  }
+
+  h2 {
+    font-size: 20px; /* Reducimos el tamaño del texto del título h2 en pantallas pequeñas */
+    margin-left: 10px; /* Ajustamos el margen izquierdo del título h2 en pantallas pequeñas */
+  }
+
+  .columna {
+    width: 100%; /* Cada columna ocupa el 100% del ancho en pantallas pequeñas */
+    margin: 0; /* Quitamos el margen entre columnas en pantallas pequeñas */
+    padding: 10px; /* Reducimos el espacio alrededor de las columnas en pantallas pequeñas */
+  }
+
+  .title {
+    font-size: 40px; /* Reducimos el tamaño del título principal en pantallas pequeñas */
+  }
+
+  .tag {
+    margin-top: 20px; /* Reducimos el margen superior del pie de página en pantallas pequeñas */
+  }
+}
