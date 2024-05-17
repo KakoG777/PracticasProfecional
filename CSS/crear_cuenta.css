@@ -1,9 +1,70 @@
 
-/* En crear_cuenta.css */
-.crear-cuenta-button {
-    background-color: #28a745;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-  }
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9; /* Color de fondo claro */
+}
+
+.create-account-container {
+  max-width: 400px;
+  margin: 50px auto; /* Centra el contenedor horizontalmente y agrega un margen superior */
+  padding: 20px;
+  background-color: #fff; /* Fondo blanco */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+header .container {
+  text-align: center;
+  margin-bottom: 20px; /* Espacio entre el logo/título y el formulario */
+}
+
+header .logo {
+  max-width: 100px; /* Ajusta el tamaño del logo */
+  margin-bottom: 10px; /* Espacio entre el logo y el título */
+}
+
+header h1 {
+  font-size: 24px;
+  color: #333; /* Color del texto */
+}
+
+.create-account-form .form-group {
+  margin-bottom: 15px;
+}
+
+.create-account-form label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.create-account-form input {
+  width: calc(100% - 20px); /* Resta el padding del ancho total */
+  padding: 10px; /* Espacio interno */
+  border: 1px solid #ccc; /* Borde gris claro */
+  border-radius: 5px; /* Bordes redondeados */
+  box-sizing: border-box;
+}
+
+.create-account-form input:focus {
+  border-color: #e3a233; /* Color del borde al enfocar */
+  outline: none; /* Elimina el borde predeterminado */
+}
+
+.button-primary {
+  width: 100%; /* El botón ocupa el 100% del ancho del contenedor */
+  padding: 10px;
+  background-color: #e3a233; /* Color de fondo */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  color: #fff; /* Color del texto */
+  font-size: 16px;
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+.button-primary:hover {
+  background-color: #ffc107; /* Color de fondo al pasar el mouse */
+}

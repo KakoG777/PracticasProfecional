@@ -55,9 +55,48 @@ body {
   transition: background-color 0.3s, color 0.3s; /* Agrega transición suave */
 }
 
-.menu-1 li a:hover {
+/* Estilos para los botones de inicio de sesión */
+
+.login-buttons-container {
+  display: inline-block; /* Muestra el contenedor como un bloque en línea */
+  margin-left: 20px; /* Ajusta el margen izquierdo según sea necesario */
+  margin-top: 20px;/* Ajusta el margen superior según sea necesario */
+}
+
+.login-buttons {
+  position: absolute;
+  top: 100px;
+  right: 20px;
+  z-index: 1;
+  display: inline-block;/*Muestra el contenedor de botones como un bloque en línea */
+  background-color: black; /* Añade fondo negro al contenedor de los botones */
+  padding: 5px; /* Ajusta el espacio de relleno */
+  margin-left: 30px; /* Ajusta el margen izquierdo según sea necesario */
+  margin-top: 50px;/* Ajusta el margen superior según sea necesario */
+}
+
+.login-buttons button {
+  display: inline-block; /* Muestra los botones como bloques para que se apilen horizontalmente*/
+  margin-bottom: 10px; /* Espacio entre los botones */
+  margin-left: 10px;  /* Ajusta el margen izquierdo entre los botones según sea necesario */
+  width: auto; /* Ajusta el ancho de los botones automaticamenet */
+  padding: 10px 12px;/* Ajusta el relleno de los botones */
+  font-size: 20px; /* Ajusta el tamaño de la fuente de los botones */
+}
+
+.login-buttons-container button {
+  padding: 12px 24px;
+  font-size: 20px;
+  border: 2px solid #e3a233; /* Añade un borde sólido */
+  border-radius: 5px; /* Añade bordes redondeados */
+  background-color: #e3a233; /* Cambia el color de fondo */
+  color: #fff; /* Cambia el color del texto */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+.login-buttons-container button:hover {
   background-color: #ffc107; /* Cambia el color de fondo al pasar el mouse */
-  color: #fff; /* Cambia el color del texto al pasar el mouse */
+  border-color: #ffc107; /* Cambia el color del borde al pasar el mouse */
 }
 
 h2 {
