@@ -3,7 +3,8 @@
 body {
   margin: 0;
   padding: 0;
-  position: relative; /* Establece el cuerpo como relativo para que los elementos absolutos se posicionen con respecto a él */
+  position: Arial, sans-serif;
+  overflow-x: hidden; /* Evita el scroll horizontal */
 }
 
 .header-top {
@@ -109,23 +110,95 @@ h2 {
   display: block; /* Opcional: puedes usar 'inline-block' según el efecto deseado */
 }
 
+/* Contenedor principal */
+
+.imagen-con-pregunta {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Ocupa toda la altura de la ventana */
+  background-image: url('../path-to-your-image/img6.JPG'); /* Ajusta el path a tu imagen */
+  background-size: cover; /* Cubre todo el contenedor */
+  background-position: center; /* Centra la imagen */
+  padding-top: 60px; /* Ajusta la distancia desde la parte superior */
+}
+
+/* Fondo semitransparente */
+.imagen-con-pregunta .contenido-imagen {
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo negro semitransparente */
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+  transition: transform 0.3s ease; /* Animación */
+
+}
+
+.imagen-con-pregunta .contenido-imagen:hover {
+  transform: scale(1.05); /* Escala al pasar el ratón */
+}
+
+/* Estilos de los elementos */
+.imagen-con-pregunta h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease-in; /* Animación */
+}
+
+.imagen-con-pregunta input[type="text"] {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+/* Añadir animaciones */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mejora de la respuesta */
 .respuesta {
-  margin-top: 40px; /* Ajusta el margen superior según sea necesario */
+  margin-top: 20px;
 }
 
 .respuesta h3 {
   font-size: 24px;
-}
-
-.respuestas-container {
-  border-radius: 5px; /* Añade bordes redondeados */
-  padding: 10px; /* Añade espacio interno */
-  background-color: black(249, 249, 249, 0.8); /* Cambia el color de fondo con transparencia */
+  margin-bottom: 10px;
+  animation: fadeIn 1s ease-in; /* Animación */
 }
 
 .respuestas-container p {
-  margin: 0; /* Elimina el margen */
-  padding: 5px 0; /* Añade espacio entre respuestas */
+  margin: 5px 0;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.3); /* Fondo blanco semitransparente */
+  border-radius: 5px;
+  animation: fadeIn 1s ease-in; /* Animación */
+
+}
+
+/* Video de fondo */
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Detrás del contenido */
+  opacity: 0.7; /* Transparencia del video */
 }
 
 .contenido .parrafo-espaciado {
@@ -136,25 +209,8 @@ h2 {
   max-width: 600px; /* Establece un ancho máximo para evitar que el párrafo se extienda demasiado */
 }
 
-.imagen-con-pregunta {
-  position: relative; /* Establece la posición relativa para que los elementos absolutos se posicionen con respecto a él */
-  display: flex; /* Muestra el contenedor como un bloque en línea */
-}
 
-.imagen-con-pregunta .contenido-imagen {
-  position: absolute; /* Establece la posición absoluta para colocar la pregunta encima de la imagen */
-  top: 36%; /* Coloca la pregunta en la mitad superior del contenedor */
-  left: 15%; /* Centra la pregunta horizontalmente */
-  transform: translate(-50%, -50%); /* Centra la pregunta verticalmente */
-  padding: 20px; /* Ajusta el espacio alrededor de la pregunta */
-  color: white; /* Color del texto de la pregunta */
-}
 
-.imagen-con-pregunta h3 {
-  margin: 0; /* Elimina el margen predeterminado del título */
-  font-size: 25px; /* Tamaño de la fuente del título */
-  text-align: center; /* Alinea el texto del título al centro */
-}
 
 .imagen {
   width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
@@ -163,16 +219,7 @@ h2 {
   margin-top: 25px; /* Ajusta esta cantidad según sea necesario para mover la imagen más abajo */
 }
 
-.imagen-con-pregunta input[type="text"] {
-  width: calc(100% - 20px); /* Reducimos el ancho para dejar espacio para el borde */
-  padding: 10px; /* Ajustamos el relleno para mejorar la apariencia */
-  border: 2px solid #f08383; /* Agregamos un borde de 2px sólido */
-  border-radius: 8px; /* Aumentamos el radio del borde para hacerlo más suave */
-  background-color: #f6f6f6; /* Cambiamos el color de fondo para que sea más claro */
-  color: #333; /* Cambiamos el color del texto para que sea más oscuro */
-  box-sizing: border-box; /* Hacemos que el tamaño total incluya el borde */
-  transition: border-color 0.3s ease; /* Agregamos una transición para suavizar el cambio de color del borde */
-}
+
 
 .imagen-con-pregunta input[type="text"]:focus {
   border-color: #f08383; /* Cambiamos el color del borde cuando el input está enfocado */
