@@ -25,3 +25,25 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   });
   
+  // Evento para manejar la entrada de preguntas
+document.getElementById("question-input").addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) { // Verifica si se presionó la tecla Enter
+    var question = this.value; // Obtiene la pregunta ingresada por el usuario
+    var answer = obtenerRespuesta(question); // Obtiene la respuesta correspondiente
+    mostrarRespuesta(answer); // Muestra la respuesta en la página
+    this.value = ""; // Limpia el input de pregunta
+  }
+});
+
+// Función para obtener la respuesta basada en la pregunta
+function obtenerRespuesta(question) {
+  // Aquí podrías implementar la lógica para obtener la respuesta basada en la pregunta
+  // Por ahora, simplemente retornaré una respuesta genérica.
+  return "Esta es una respuesta genérica a la pregunta: " + question;
+}
+
+// Función para mostrar la respuesta en la página
+function mostrarRespuesta(answer) {
+  var answerContainer = document.getElementById("answer-container");
+  answerContainer.innerHTML = "<p>" + answer + "</p>";
+}

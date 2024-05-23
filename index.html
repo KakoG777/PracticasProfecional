@@ -1,105 +1,86 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mi Sitio Web</title>
-    <link rel="stylesheet" href="CSS/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reparaciones Domésticas</title>
+    <link rel="stylesheet" href="CSS/style.css">
   </head>
   <body>
-    <div class="header-top"></div>
     <header>
       <div class="container">
+        <img class="logo" src="images/logo.JPG" alt="Logo">
+        <h1>@Reparar</h1>
         <nav class="navbar">
-          <ul class="menu-1">
+          <ul>
             <li><a href="#">Inicio</a></li>
-            <li><a href="#">Herramientas</a></li>
-            <li><a href="#">Mantenimiento</a></li>
-            <li><a href="#">Contactos</a></li>
-            <!-- Añade un nuevo elemento de lista para los botones de inicio de sesión y crear cuenta -->
-          <li class="login-buttons-container">
-            <div class="login-buttons">
-              <button onclick="location.href='crear_cuenta.html'" class="button-primary">Crear Cuenta</button>
-              <button onclick="location.href='iniciar_sesion.html'" class="button-secondary">Iniciar Sesión</button>
-            </div>
-          </li>  
+            <li><a href="#">Tutoriales</a></li>
+            <li><a href="#">Consejos</a></li>
+            <li><a href="#">Preguntas Frecuentes</a></li>
+            <li class="login-buttons-container">
+              <div class="login-buttons">
+                <button onclick="location.href='crear_cuenta.html'" class="button-primary">Crear Cuenta</button>
+                <button onclick="location.href='iniciar_sesion.html'" class="button-secondary">Iniciar Sesión</button>
+              </div>
+            </li>
           </ul>
         </nav>
-        <!-- Fin del nuevo código -->
-        <img class="logo-1" src="images/logo.JPG" alt="" />
-        <h1 class="title">@Reparar</h1>
-        <!-- Nuevo código para botones de Crear Cuenta e Iniciar Sesión -->
-     </div>
-    </header>
-  
-    <h2>
-      ¿Tu hogar está lleno de pequeños problemas que necesitan ser resueltos?
-    </h2>
-
-    <div class="contenido">
-     <p class="parrafo-espaciado">
-      Si te encuentras constantemente lidiando con averías domésticas, has
-      llegado al lugar correcto!<br></br> En este artículo, descubrirás cómo solucionar
-      problemas comunes en casa sin la necesidad de llamar a un profesional.<br></br>
-      Desde reparaciones básicas hasta trucos de bricolaje, te proporcionaremos
-      todo lo que necesitas saber para convertirte en un experto en el
-      mantenimiento de tu hogar.<br></br>
-      <strong>¡Prepárate para ahorrar tiempo, dinero y aprender a solucionar tus
-        propios problemas domésticos!</strong>
-      </p>
-    </div>
-
-    <div class="imagen-con-pregunta">
-      <!-- Video de fondo -->
-      <video class="video-background" autoplay muted loop>
-        <source src="videos/video-proyecto.mp4" type="video/mp4"> 
-      </video>
-        <div class="contenido-imagen">
-        <h3>¿Cúal es tu pregunta?</h3>
-         <input type="text" placeholder="Escribe tu pregunta aquí" />
-      <div class="respuesta">
-        <h3>Respuestas</h3>
-        <div class="respuestas-container">
-          <!-- Aquí puedes agregar tus respuestas -->
-          <p>Respuesta 1</p>
-          <p>Respuesta 2</p>
-          <!-- Agrega más respuestas según sea necesario -->
-        </div>
       </div>
-    </div>
-    </div>
+    </header>
     
-    
-    <!--Imagen Eléctrico-->
-       <div class="contenedor">
-        <div class="columna">
-          <img src="images/img7.JPG" alt="imagen de lampara">
-        </div>
-          
-      <div class="columna">
-        <div class="contenido">
-          <h2>La Importancia de la Seguridad Eléctrica en el Hogar</h2>
-       <p>
-        <!-- Agregar un párrafo -->
-        <strong>La seguridad eléctrica es fundamental en cualquier hogar para prevenir accidentes y proteger a las personas y la propiedad de posibles riesgos</strong>.<br></p> 
-        
-        <div class="parrafo-epecifico">
-        Una instalación eléctrica segura garantiza un entorno residencial libre de peligros relacionados con la electricidad.<br></br>
-        
-        <strong>Algunas medidas básicas:</strong>
-        Inspección y Mantenimiento Regular. Es importante realizar inspecciones periódicas en el sistema eléctrico del hogar para identificar y corregir posibles problemas como cables sueltos, enchufes sobrecargados o interruptores defectuosos. Además, el mantenimiento regular de los equipos y dispositivos eléctricos ayuda a prevenir fallos y cortocircuitos.<br></br>
-        <strong> Enchufes y Cables Seguros:</strong> Utilizar enchufes y cables eléctricos de calidad y bajo normas es esencial para la segurida eléctrica. Se deben evitar los cables pelados o dañados, y nunca se deben sobrecargar los enchufes con múltiples dispositivos.<br></br>
-        <strong>Instalación por Profesionales Certificados:</strong> La instalación de nuevos circuitos eléctricos o la modificación de los existentes debe ser realizada por electricistas profesionales y certificados. 
-        <br></br> <strong>Responsable de Equipos y Aparatos Eléctricos:</strong> Es importante seguir las instrucciones de uso de los equipos eléctricos y no sobrecargarlos. 
-         Protección contra Sobretensiones: Utilizar dispositivos de protección contra sobretensiones ayuda a proteger los equipos electrónicos sensibles de daños causados por picos de voltaje en la red eléctrica.
-         <strong>En resumen, mantener la seguridad eléctrica en el hogar requiere atención y precaución. Siguiendo estas medidas y siendo conscientes de los riesgos, podemos garantizar un entorno doméstico seguro y protegido para todos los miembros de la familia.</strong> 
-        </div>
+    <main>
+      <section id="intro">
+        <h2>¿Tu hogar está lleno de pequeños problemas que necesitan ser resueltos?</h2>
+        <p>
+          Si te encuentras constantemente lidiando con averías domésticas, ¡has llegado al lugar correcto!<br>
+          En este artículo, descubrirás cómo solucionar problemas comunes en casa sin la necesidad de llamar a un profesional.<br>
+          Desde reparaciones básicas hasta trucos de bricolaje, te proporcionaremos todo lo que necesitas saber para convertirte en un experto en el mantenimiento de tu hogar.<br>
+          <strong>¡Prepárate para ahorrar tiempo, dinero y aprender a solucionar tus propios problemas domésticos!</strong>
         </p>
+      </section>
+      
+      <section id="faq">
+        <video class="video-background" autoplay muted loop>
+          <source src="videos/video-proyecto.mp4" type="video/mp4">
+        </video>
+        <div class="faq-content">
+          <h3>¿Cuál es tu pregunta?</h3>
+          <input type="text" id="question-input" placeholder="Escribe tu pregunta aquí">
+          <div id="answers-container">
+            <h3>Respuestas</h3>
+              <p>Respuesta 1</p>
+              <p>Respuesta 2</p>
+              <!-- Agrega más respuestas según sea necesario -->
+            </div>
+          </div>
         </div>
+      </section>
+      
+      <section id="electrical-safety">
+        <div class="content">
+          <img src="images/img7.JPG" alt="Imagen de lámpara">
+          <div>
+            <h2>La Importancia de la Seguridad Eléctrica en el Hogar</h2>
+            <p>
+              La seguridad eléctrica es fundamental en cualquier hogar para prevenir accidentes y proteger a las personas y la propiedad de posibles riesgos.<br>
+              <strong>Algunas medidas básicas:</strong><br>
+              <ul>
+                <li>Inspección y Mantenimiento Regular. Es importante realizar inspecciones periódicas en el sistema eléctrico del hogar para identificar y corregir posibles problemas como cables sueltos, enchufes sobrecargados o interruptores defectuosos. Además, el mantenimiento regular de los equipos y dispositivos eléctricos ayuda a prevenir fallos y cortocircuitos.</li>
+                <li>Enchufes y Cables Seguros: Utilizar enchufes y cables eléctricos de calidad y bajo normas es esencial para la seguridad eléctrica. Se deben evitar los cables pelados o dañados, y nunca se deben sobrecargar los enchufes con múltiples dispositivos.</li>
+                <li>Instalación por Profesionales Certificados: La instalación de nuevos circuitos eléctricos o la modificación de los existentes debe ser realizada por electricistas profesionales y certificados.</li>
+                <li>Responsabilidad con Equipos y Aparatos Eléctricos: Es importante seguir las instrucciones de uso de los equipos eléctricos y no sobrecargarlos.</li>
+                <li>Protección contra Sobretensiones: Utilizar dispositivos de protección contra sobretensiones ayuda a proteger los equipos electrónicos sensibles de daños causados por picos de voltaje en la red eléctrica.</li>
+              </ul>
+              En resumen, mantener la seguridad eléctrica en el hogar requiere atención y precaución. Siguiendo estas medidas y siendo conscientes de los riesgos, podemos garantizar un entorno doméstico seguro y protegido para todos los miembros de la familia.
+            </p>
+          </div>
         </div>
-    </div>
-
-    <div class="tag">&copy;Marcos Giulliano 2024</div>
+      </section>
+    </main>
+    
+    <footer>
+      <p>&copy; Marcos Giulliano 2024</p>
+    </footer>
 
     <script src="script.js"></script>
   </body>
