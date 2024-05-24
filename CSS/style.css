@@ -66,6 +66,15 @@ nav ul li .login-buttons {
   gap: 10px; /* Espacio entre los botones */
 }
 
+/* Ocultar otras secciones */
+#inicio,
+#tutoriales,
+#consejos,
+#preguntas-frecuentes {
+  display: none;
+}
+
+
 /* Estilos para los botones principales */
 .button-primary, .button-secondary {
   border: none; /* Elimina el borde */
