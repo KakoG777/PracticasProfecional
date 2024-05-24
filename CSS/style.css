@@ -76,14 +76,27 @@ nav ul li .login-buttons {
 
 /* Estilos para el botón primario */
 .button-primary {
-  background-color: #5cb85c; /* Color de fondo */
   color: #fff; /* Color del texto */
 }
 
 /* Estilos para el botón secundario */
 .button-secondary {
-  background-color: #5bc0de; /* Color de fondo */
   color: #fff; /* Color del texto */
+}
+
+.login-buttons-container button {
+  padding: 12px 24px;
+  font-size: 20px;
+  border: 2px solid #e3a233; /* Añade un borde sólido */
+  border-radius: 5px; /* Añade bordes redondeados */
+  background-color: #e3a233; /* Cambia el color de fondo */
+  color: #fff; /* Cambia el color del texto */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+.login-buttons-container button:hover {
+  background-color: #ffc107; /* Cambia el color de fondo al pasar el mouse */
+  border-color: #ffc107; /* Cambia el color del borde al pasar el mouse */
 }
 
 /* Estilos para el contenido principal */
@@ -108,26 +121,59 @@ section {
 
 /* Estilos para la sección de preguntas frecuentes */
 #faq {
-  position: relative; /* Posiciona los elementos en relación a esta sección */
+  padding: 20px;
   text-align: center; /* Centra el texto */
   color: white; /* Color del texto */
 }
 
-/* Estilos para el video de fondo */
-#faq .video-background {
-  width: 100%; /* Ancho del video al 100% del contenedor */
-  height: auto; /* Altura automática para mantener la proporción */
+/* Contenedor de FAQ con diseño de dos columnas */
+.faq-container {
+  display: flex; /* Utiliza flexbox para alinear el video y el cuadro de preguntas */
+  justify-content: space-between; /* Espacio entre las columnas */
+  align-items: flex-start; /* Alinea los elementos al inicio */
+  gap: 20px; /* Espacio entre las columnas */
 }
 
-/* Contenido de las preguntas frecuentes */
-#faq .faq-content {
-  position: absolute; /* Posiciona el contenido absolutamente respecto al contenedor */
-  top: 50%; /* Centra verticalmente el contenido */
-  left: 50%; /* Centra horizontalmente el contenido */
-  transform: translate(-50%, -50%); /* Ajuste fino para centrar exactamente */
-  background: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+/* Estilos para la columna del video */
+.video-column {
+  flex: 1; /* Toma 1 parte del espacio disponible */
+  text-align: left; /* Alinea el contenido a la izquierda */
+}
+
+.video-column video {
+  width: 100%; /* Ancho del video al 100% del contenedor */
+  height: auto; /* Altura automática para mantener la proporción */
+  max-width: 800px; /* Tamaño máximo del video */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Estilos para la columna de preguntas frecuentes */
+.faq-content {
+  flex: 2; /* Toma 2 partes del espacio disponible */
+  background: #fff; /* Fondo blanco */
+  color: #333; /* Color del texto */
   padding: 20px; /* Relleno interno */
   border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+/* Estilos para el cuadro de entrada de preguntas */
+#question-input {
+  width: 100%; /* Ancho completo del contenedor */
+  padding: 10px; /* Relleno interno */
+  margin: 10px 0; /* Margen superior e inferior */
+  border: 1px solid #ccc; /* Borde */
+  border-radius: 4px; /* Bordes redondeados */
+}
+
+/* Estilos para el contenedor de respuestas */
+#answers-container {
+  margin-top: 20px; /* Margen superior */
+}
+
+#answers-container p {
+  margin-bottom: 10px; /* Margen inferior */
 }
 
 /* Estilos para la sección de seguridad eléctrica */
@@ -171,4 +217,15 @@ footer {
     flex-direction: column; /* Coloca los elementos en columna */
     align-items: center; /* Alinea los elementos al centro */
   }
-}
+
+  /* Ajustes en el contenedor de FAQ */
+  .faq-container {
+    flex-direction: column; /* Coloca los elementos en columna */
+    align-items: center; /* Alinea los elementos al centro */
+  }
+
+  /* Ajustes en la columna del video */
+  .video-column {
+    padding-right: 0; /* Elimina el relleno a la derecha */
+    margin-bottom: 20
+  }
