@@ -143,8 +143,8 @@ section {
 
 /* Estilos para la columna del video */
 .video-column {
-  flex: 1; /* Toma 1 parte del espacio disponible */
-  text-align: left; /* Alinea el contenido a la izquierda */
+  padding-right: 0; /* Elimina el relleno a la derecha */
+  margin-bottom: 20px; /* Agrega la unidad de medida (píxeles) */
 }
 
 .video-column video {
@@ -153,6 +153,7 @@ section {
   max-width: 800px; /* Tamaño máximo del video */
   border-radius: 10px; /* Bordes redondeados */
 }
+/* Ajustes en la columna del video */
 
 /* Estilos para la columna de preguntas frecuentes */
 .faq-content {
@@ -235,4 +236,5 @@ footer {
   .video-column {
     padding-right: 0; /* Elimina el relleno a la derecha */
     margin-bottom: 20
+
   }
