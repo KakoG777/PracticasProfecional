@@ -67,12 +67,10 @@ nav ul li .login-buttons {
 }
 
 /* Ocultar otras secciones */
-#inicio,
-#tutoriales,
-#consejos,
-#preguntas-frecuentes {
+.ocultar-en-inicio {
   display: none;
 }
+
 
 
 /* Estilos para los botones principales */

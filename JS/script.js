@@ -44,6 +44,8 @@ return "Esta es una respuesta genérica a la pregunta: " + question;
 
 // Función para mostrar la respuesta en la página
 function mostrarRespuesta(answer) {
-var answerContainer = document.getElementById("answer-container");
-answerContainer.innerHTML = "<p>" + answer + "</p>";
+  const answerContainer = document.getElementById('answer-container');
+  if (answerContainer) {
+    answerContainer.innerHTML = "<p>" + answer + "</p>";
+  }
 }
