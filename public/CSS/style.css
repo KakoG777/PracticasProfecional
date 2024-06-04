@@ -195,7 +195,7 @@ section {
 
 /* Estilos para la imagen dentro de la sección de seguridad eléctrica */
 #electrical-safety img {
-  max-width: 100%; /* Ancho máximo del 100% del contenedor */
+  max-width: 50%; /* Ancho máximo del 100% del contenedor */
   border-radius: 10px; /* Bordes redondeados */
 }
 

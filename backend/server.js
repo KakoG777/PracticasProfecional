@@ -1,61 +1,32 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const { Configuration, OpenAIApi } = require('openai');
+const { getResponse } = require('./chatApi');
+const path = require('path');
+
 const app = express();
 const port = 3000;
 
-// Configuración de OpenAI
-const configuration = new Configuration({
-    apiKey: 'TU_CLAVE_DE_API_DE_OPENAI',
-});
-const openai = new OpenAIApi(configuration);
+// Servir archivos estáticos desde el directorio 'public'
+app.use(express.static(path.join(__dirname, 'public')));
 
-// Middleware para parsear JSON
 app.use(bodyParser.json());
 
-// Ruta para manejar el formulario
-app.post('/api/consulta', async (req, res) => {
-    const { pregunta } = req.body;
-
+app.post('/api/chat', async (req, res) => {
+    const { question } = req.body;
     try {
-        const response = await openai.createCompletion({
-            model: 'text-davinci-003',
-            prompt: pregunta,
-            max_tokens: 150,
-        });
-
-        const respuestaAI = response.data.choices[0].text.trim();
-        res.json({ respuesta: respuestaAI });
+        const answer = await getResponse(question);
+        res.json({ answer: answer });
     } catch (error) {
         console.error(error);
-        res.status(500).json({ error: 'Error al obtener la respuesta de la IA' });
+        res.status(500).send('Error processing request');
     }
+});
+
+// Ruta para manejar cualquier otra petición no definida
+app.use((req, res) => {
+    res.status(404).send('Not Found');
 });
 
 app.listen(port, () => {
-    console.log(`Servidor corriendo en http://localhost:${port}`);
-});
-
-//Manejo de errores//
-
-app.post('/api/consulta', async (req, res) => {
-    const { pregunta } = req.body;
-
-    if (!pregunta || typeof pregunta !== 'string') {
-        return res.status(400).json({ error: 'Pregunta inválida' });
-    }
-
-    try {
-        const response = await openai.createCompletion({
-            model: 'text-davinci-003',
-            prompt: pregunta,
-            max_tokens: 150,
-        });
-
-        const respuestaAI = response.data.choices[0].text.trim();
-        res.json({ respuesta: respuestaAI });
-    } catch (error) {
-        console.error('Error al obtener la respuesta de la IA:', error);
-        res.status(500).json({ error: 'Error al obtener la respuesta de la IA' });
-    }
+    console.log(`Server running at http://localhost:${port}`);
 });

@@ -12,6 +12,8 @@
     "dependencies": {
         "body-parser": "^1.20.2",
         "express": "^4.19.2",
-        "openai": "^3.3.0"
+        "openai": "^3.3.0",
+        "dotenv": "^16.0.0",
+        "axios": "^0.21.1"
     }
 }
