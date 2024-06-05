@@ -1,19 +1,23 @@
-document.getElementById('search-button').addEventListener('click', async function(event) {
-    event.preventDefault();
-    const question = document.getElementById('question-input').value;
-
-    const response = await fetch('/api/chat', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ question: question })
-    });
-
-    if (response.ok) {
-        const data = await response.json();
-        document.getElementById('response-text').innerText = data.answer;
-    } else {
-        document.getElementById('response-text').innerText = 'Error al obtener respuesta';
+document.addEventListener('DOMContentLoaded', function() {
+    const loginForm = document.getElementById('login-form');
+    const signupForm = document.getElementById('signup-form');
+  
+    if (loginForm) {
+      loginForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        const email = document.getElementById('login-email').value;
+        const password = document.getElementById('login-password').value;
+        console.log('Iniciar Sesión:', email, password);
+      });
     }
-});
+  
+    if (signupForm) {
+      signupForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        const email = document.getElementById('signup-email').value;
+        const password = document.getElementById('signup-password').value;
+        console.log('Crear Cuenta:', email, password);
+      });
+    }
+  });
+  
