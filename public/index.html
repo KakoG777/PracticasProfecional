@@ -1,141 +1,135 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reparaciones Domésticas</title>
-    <link rel="stylesheet" href="CSS/style.css">
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <img class="logo" src="images/logo.JPG" alt="Logo">
-        <h1>@Reparar</h1>
-        <nav class="navbar">
-          <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="tutoriales.html">Tutoriales</a></li>
-            <li><a href="consejos.html">Consejos</a></li>
-            <li><a href="preguntas_frecuentes.html">Preguntas Frecuentes</a></li>
-            <li class="login-buttons-container">
-              <div class="login-buttons">
-                <button onclick="location.href='crear_cuenta.html'" class="button-primary">Crear Cuenta</button>
-                <button onclick="location.href='iniciar_sesion.html'" class="button-secondary">Iniciar Sesión</button>
-              </div>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
-<!-- contenido de la opción de intro -->
-    
-    <main>
-      <section id="inicio">
-        <h2>Bienvenido a @Reparar</h2>
-      </section>
-    
-   <!-- Contenido que deseas ocultar en la página de inicio -->
-<div class="ocultar-en-inicio">
-      <section id="tutoriales">
-          <h2>Bienvenido a @Reparar</h2>
-          <p>Contenido de la página de tutoriales.</p>
-      </section>
-</div>
-
-<!-- contenido de la opción de consejos -->
-<div class="ocultar-en-inicio">
-      <section id="consejos">
-          <h2>Bienvenido a @Reparar</h2>
-          <p>Contenido de la página de consejos.</p>
-      </section>
-</div>
-
-<!-- contenido de la opción de Preguntas Frecuentes -->
-<div class="ocultar-en-inicio">
-      <section id="preguntas-frecuentes">
-          <h2>Bienvenido a @Reparar</h2>
-          <p>Contenido de la página de preguntas_frecuentes.</p>
-      </section>
-</div>
-
-
-<!-- Fin del bloque de opciones  -->
-      <section id="intro">
-        <h2>¿Tu hogar está lleno de pequeños problemas que necesitan ser resueltos?</h2>
-        <p>
-          Si te encuentras constantemente lidiando con averías domésticas, ¡has llegado al lugar correcto!<br>
-          En este artículo, descubrirás cómo solucionar problemas comunes en casa sin la necesidad de llamar a un profesional.<br>
-          Desde reparaciones básicas hasta trucos de bricolaje, te proporcionaremos todo lo que necesitas saber para convertirte en un experto en el mantenimiento de tu hogar.<br>
-          <strong>¡Prepárate para ahorrar tiempo, dinero y aprender a solucionar tus propios problemas domésticos!</strong>
-        </p>
-      </section>
-
-      <section id="faq">
-        <div class="faq-container">
-            <div class="video-column">
-                <video class="video-background" autoplay muted loop>
-                    <source src="videos/video-proyecto.mp4" type="video/mp4">
-                </video>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reparaciones Domésticas</title>
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img class="logo" src="images/logo.JPG" alt="Logo">
+      <h1>@Reparar</h1>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="tutoriales.html">Tutoriales</a></li>
+          <li><a href="consejos.html">Consejos</a></li>
+          <li><a href="preguntas_frecuentes.html">Preguntas Frecuentes</a></li>
+          <li class="login-buttons-container">
+            <div class="login-buttons">
+              <button onclick="location.href='crear_cuenta.html'" class="button-primary">Crear Cuenta</button>
+              <button onclick="location.href='iniciar_sesion.html'" class="button-secondary">Iniciar Sesión</button>
             </div>
-            <div class="faq-content">
-                <h3>¿Cuál es tu pregunta?</h3>
-                <input type="text" id="question-input" placeholder="Escribe tu pregunta aquí">
-                <button type="submit" id="search-button">Buscar</button>
-                <div id="answers-container">
-                    <h3>Respuestas</h3>
-                    <p id="response-text">Respuesta 1</p>
-                </div>
-            </div>
-        </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio">
+      <h2>Bienvenido a @Reparar</h2>
     </section>
-   
-      
-      <section id="electrical-safety">
-        <div class="content">
-          <img src="images/light.webp" alt="Imagen de lámpara">
-          <div>
-            <h2>La Importancia de la Seguridad Eléctrica en el Hogar</h2>
-            <p>
-              La seguridad eléctrica es fundamental en cualquier hogar para prevenir accidentes y proteger a las personas y la propiedad de posibles riesgos.<br>
-              <strong>Algunas medidas básicas:</strong><br>
-              <ul>
-                <li>Inspección y Mantenimiento Regular. Es importante realizar inspecciones periódicas en el sistema eléctrico del hogar para identificar y corregir posibles problemas como cables sueltos, enchufes sobrecargados o interruptores defectuosos. Además, el mantenimiento regular de los equipos y dispositivos eléctricos ayuda a prevenir fallos y cortocircuitos.</li>
-                <li>Enchufes y Cables Seguros: Utilizar enchufes y cables eléctricos de calidad y bajo normas es esencial para la seguridad eléctrica. Se deben evitar los cables pelados o dañados, y nunca se deben sobrecargar los enchufes con múltiples dispositivos.</li>
-                <li>Instalación por Profesionales Certificados: La instalación de nuevos circuitos eléctricos o la modificación de los existentes debe ser realizada por electricistas profesionales y certificados.</li>
-                <li>Responsabilidad con Equipos y Aparatos Eléctricos: Es importante seguir las instrucciones de uso de los equipos eléctricos y no sobrecargarlos.</li>
-                <li>Protección contra Sobretensiones: Utilizar dispositivos de protección contra sobretensiones ayuda a proteger los equipos electrónicos sensibles de daños causados por picos de voltaje en la red eléctrica.</li>
-              </ul>
-              En resumen, mantener la seguridad eléctrica en el hogar requiere atención y precaución. Siguiendo estas medidas y siendo conscientes de los riesgos, podemos garantizar un entorno doméstico seguro y protegido para todos los miembros de la familia.
-            </p>
+
+    <div class="ocultar-en-inicio">
+      <section id="tutoriales">
+        <h2>Bienvenido a @Reparar</h2>
+        <p>Contenido de la página de tutoriales.</p>
+      </section>
+    </div>
+
+    <div class="ocultar-en-inicio">
+      <section id="consejos">
+        <h2>Bienvenido a @Reparar</h2>
+        <p>Contenido de la página de consejos.</p>
+      </section>
+    </div>
+
+    <div class="ocultar-en-inicio">
+      <section id="preguntas-frecuentes">
+        <h2>Bienvenido a @Reparar</h2>
+        <p>Contenido de la página de preguntas_frecuentes.</p>
+      </section>
+    </div>
+
+    <section id="intro">
+      <h2>¿Tu hogar está lleno de pequeños problemas que necesitan ser resueltos?</h2>
+      <p>
+        Si te encuentras constantemente lidiando con averías domésticas, ¡has llegado al lugar correcto!<br>
+        En este artículo, descubrirás cómo solucionar problemas comunes en casa sin la necesidad de llamar a un profesional.<br>
+        Desde reparaciones básicas hasta trucos de bricolaje, te proporcionaremos todo lo que necesitas saber para convertirte en un experto en el mantenimiento de tu hogar.<br>
+        <strong>¡Prepárate para ahorrar tiempo, dinero y aprender a solucionar tus propios problemas domésticos!</strong>
+      </p>
+    </section>
+
+    <section id="faq">
+      <div class="faq-container">
+        <div class="video-column">
+          <video class="video-background" autoplay muted loop>
+            <source src="videos/video-proyecto.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="faq-content">
+          <h3>¿Cuál es tu pregunta?</h3>
+          <!-- Añadimos el id 'chat-form' al formulario -->
+          <form id="chat-form">
+            <input type="text" id="question-input" placeholder="Escribe tu pregunta aquí">
+            <button type="submit" id="search-button">Buscar</button>
+          </form>
+          <div id="answers-container">
+            <h3>Respuestas</h3>
+            <p id="response-text">Esperando una pregunta...</p>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-<!-- Sección sobre la importancia de lubricar la cadena de la bicicleta -->
-<section id="importancia-lubricante">
-  <div class="container">
-    <div class="image-container">
-      <img src="images/lubricaciónCadena.jpg" alt="Lubricante de cadena">
-    </div>
-    <div class="text-container">
-      <h2>Importancia de mantener la cadena lubricada</h2>
-      <p>
-        Mantener la cadena de tu bicicleta bien lubricada es crucial para su rendimiento y durabilidad.
-        Una cadena bien lubricada reduce la fricción y el desgaste, lo que ayuda a prolongar la vida útil de los componentes de la transmisión y mejora la eficiencia de pedaleo.
-        Además, una cadena lubricada adecuadamente reduce el riesgo de corrosión, especialmente en condiciones de humedad.
-        Recuerda lubricar regularmente tu cadena siguiendo las recomendaciones del fabricante para disfrutar de un pedaleo suave y seguro.
-      </p>
-    </div>
-  </div>
-</section>
-</main>
-    
-    <footer>
-      <p>&copy; Marcos Giulliano 2024</p>
-    </footer>
+    <section id="electrical-safety">
+      <div class="content">
+        <img src="images/light.webp" alt="Imagen de lámpara">
+        <div>
+          <h2>La Importancia de la Seguridad Eléctrica en el Hogar</h2>
+          <p>
+            La seguridad eléctrica es fundamental en cualquier hogar para prevenir accidentes y proteger a las personas y la propiedad de posibles riesgos.<br>
+            <strong>Algunas medidas básicas:</strong><br>
+            <ul>
+              <li>Inspección y Mantenimiento Regular. Es importante realizar inspecciones periódicas en el sistema eléctrico del hogar para identificar y corregir posibles problemas como cables sueltos, enchufes sobrecargados o interruptores defectuosos. Además, el mantenimiento regular de los equipos y dispositivos eléctricos ayuda a prevenir fallos y cortocircuitos.</li>
+              <li>Enchufes y Cables Seguros: Utilizar enchufes y cables eléctricos de calidad y bajo normas es esencial para la seguridad eléctrica. Se deben evitar los cables pelados o dañados, y nunca se deben sobrecargar los enchufes con múltiples dispositivos.</li>
+              <li>Instalación por Profesionales Certificados: La instalación de nuevos circuitos eléctricos o la modificación de los existentes debe ser realizada por electricistas profesionales y certificados.</li>
+              <li>Responsabilidad con Equipos y Aparatos Eléctricos: Es importante seguir las instrucciones de uso de los equipos eléctricos y no sobrecargarlos.</li>
+              <li>Protección contra Sobretensiones: Utilizar dispositivos de protección contra sobretensiones ayuda a proteger los equipos electrónicos sensibles de daños causados por picos de voltaje en la red eléctrica.</li>
+            </ul>
+            En resumen, mantener la seguridad eléctrica en el hogar requiere atención y precaución. Siguiendo estas medidas y siendo conscientes de los riesgos, podemos garantizar un entorno doméstico seguro y protegido para todos los miembros de la familia.
+          </p>
+        </div>
+      </div>
+    </section>
 
-    <script src="/public/JS/script.js"></script>
-    <script src="/public/JS/app.js"></script>
-  </body>
+    <section id="importancia-lubricante">
+      <div class="container">
+        <div class="image-container">
+          <img src="images/lubricaciónCadena.jpg" alt="Lubricante de cadena">
+        </div>
+        <div class="text-container">
+          <h2>Importancia de mantener la cadena lubricada</h2>
+          <p>
+            Mantener la cadena de tu bicicleta bien lubricada es crucial para su rendimiento y durabilidad.
+            Una cadena bien lubricada reduce la fricción y el desgaste, lo que ayuda a prolongar la vida útil de los componentes de la transmisión y mejora la eficiencia de pedaleo.
+            Además, una cadena lubricada adecuadamente reduce el riesgo de corrosión, especialmente en condiciones de humedad.
+            Recuerda lubricar regularmente tu cadena siguiendo las recomendaciones del fabricante para disfrutar de un pedaleo suave y seguro.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; Marcos Giulliano 2024</p>
+  </footer>
+
+  <script src="/JS/script.js"></script>
+  <script src="/JS/app.js"></script>
+</body>
 </html>
