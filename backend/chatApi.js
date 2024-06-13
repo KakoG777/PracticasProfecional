@@ -1,14 +1,14 @@
 const express = require('express');
 const router = express.Router();
-
-// Simulación de conexión a una AI (reemplaza con tu lógica de AI)
-router.post('/ask', (req, res) => {
-  const question = req.body.question;
-
-  // Aquí va la lógica para conectar y obtener la respuesta de la AI
-  const responseFromAI = "Esta es una respuesta simulada a tu pregunta: " + question;
-
-  res.json({ response: responseFromAI });
+// Definición de rutas API
+router.get('/', (_req, res) => {
+  console.log('Solicitud GET a /chat recibida');
+  res.json({ message: '¡Hola desde la ruta /chat!' });
+});
+// Puedes agregar más rutas aquí
+router.post('/message', (req, res) => {
+  const message = req.body.message;
+  res.json({ status: 'Mensaje recibido', message });
 });
 
 module.exports = router;

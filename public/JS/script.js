@@ -1,19 +1,14 @@
-document.getElementById("question-input").addEventListener("keyup", function(event) {
-  if (event.keyCode === 13) {
-    var question = this.value;
-    var answer = obtenerRespuesta(question);
-    mostrarRespuesta(answer);
-    this.value = "";
+document.addEventListener('DOMContentLoaded', function() {
+  const chatForm = document.getElementById('chat-form');
+  console.log(chatForm); // Esto debería mostrar el elemento o null si no se encuentra
+  if (chatForm) {
+    chatForm.addEventListener('submit', function(event) {
+      event.preventDefault();
+      const questionInput = document.getElementById('question-input').value;
+      // Lógica de la pregunta
+      console.log('Pregunta enviada:', questionInput);
+    });
+  } else {
+    console.error('Formulario chat-form no encontrado');
   }
 });
-
-function obtenerRespuesta(question) {
-  return "Esta es una respuesta genérica a la pregunta: " + question;
-}
-
-function mostrarRespuesta(answer) {
-  const answerContainer = document.getElementById('answer-container');
-  if (answerContainer) {
-    answerContainer.innerHTML = "<p>" + answer + "</p>";
-  }
-}
