@@ -281,3 +281,63 @@ footer {
 
   }
 }
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+h1 {
+  color: #333;
+}
+#clientes {
+  margin-top: 20px;
+}
+.cliente {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+/* Estilos para el menú de usuario */
+.user-menu {
+  display: none;
+  position: relative;
+}
+
+#user-button {
+  background-color: #e3a233;
+  border: 2px solid #e3a233;
+  color: #fff;
+  padding: 12px 24px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#user-button:hover {
+  background-color: #ffc107;
+  border-color: #ffc107;
+}
+
+.user-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.user-dropdown a {
+  display: block;
+  padding: 10px 20px;
+  color: #333;
+  text-decoration: none;
+}
+
+.user-dropdown a:hover {
+  background-color: #f4f4f4;
+}

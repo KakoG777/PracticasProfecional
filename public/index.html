@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Reparaciones Domésticas</title>
   <link rel="stylesheet" href="CSS/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 <body>
   <header>
@@ -21,6 +22,16 @@
             <div class="login-buttons">
               <button onclick="location.href='crear_cuenta.html'" class="button-primary">Crear Cuenta</button>
               <button onclick="location.href='iniciar_sesion.html'" class="button-secondary">Iniciar Sesión</button>
+            </div>
+            <div id="user-menu" class="user-menu">
+              <button id="user-button">Conectado</button>
+              <div id="user-dropdown" class="user-dropdown">
+                <a href="perfil.html">Perfil</a>
+                <a href="configuracion.html">Configuración</a>
+                <a href="mensajes.html">Mensajes</a>
+                <a href="notificaciones.html">Notificaciones</a>
+                <a href="cerrar_sesion.html">Cerrar Sesión</a>
+              </div>
             </div>
           </li>
         </ul>
@@ -129,7 +140,79 @@
     <p>&copy; Marcos Giulliano 2024</p>
   </footer>
 
-  <script src="/JS/script.js"></script>
+  <div id="clientes"></div>
   <script src="/JS/app.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const loginForm = document.getElementById('login-form');
+      const signupForm = document.getElementById('signup-form');
+      const chatForm = document.getElementById('chat-form');
+      const chatInput = document.getElementById('question-input');
+      const chatOutput = document.getElementById('response-text');
+      const searchButton = document.getElementById('search-button');
+
+      if (loginForm) {
+        loginForm.addEventListener('submit', function(event) {
+          event.preventDefault();
+          const email = document.getElementById('login-email').value;
+          const password = document.getElementById('login-password').value;
+          axios.post('/iniciar-sesion', { email, password })
+            .then(response => {
+              console.log(response.data);
+            })
+            .catch(error => {
+              console.error('Error:', error);
+            });
+        });
+      }
+
+      if (signupForm) {
+        signupForm.addEventListener('submit', function(event) {
+          event.preventDefault();
+          const email = document.getElementById('signup-email').value;
+          const password = document.getElementById('signup-password').value;
+          axios.post('/crear-usuario', { email, password })
+            .then(response => {
+              console.log(response.data);
+            })
+            .catch(error => {
+              console.error('Error:', error);
+            });
+        });
+      }
+
+      if (chatForm) {
+        chatForm.addEventListener('submit', async function(event) {
+          event.preventDefault();
+          const question = chatInput.value;
+
+          try {
+            const response = await axios.post('/openai', { question });
+            chatOutput.innerText = response.data.text;
+          } catch (error) {
+            console.error('Error:', error);
+            chatOutput.innerText = 'Error al obtener respuesta';
+          }
+        });
+      }
+
+      // Obtener datos de clientes
+      axios.get('/api/clientes')
+        .then(response => {
+          const clientes = response.data;
+          const clientesDiv = document.getElementById('clientes');
+          clientes.forEach(cliente => {
+            const clienteElement = document.createElement('p');
+            clienteElement.innerText = `ID: ${cliente.id}, Nombre: ${cliente.nombre}, Email: ${cliente.email}`;
+            clientesDiv.appendChild(clienteElement);
+          });
+        })
+        .catch(error => {
+          console.error('Error al obtener datos de clientes:', error);
+        });
+    });
+  </script>
+
 </body>
 </html>
