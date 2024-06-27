@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }, {
           headers: {
             'Content-Type': 'application/json',
-            'Authorization': `Bearer YOUR_API_KEY` // Reemplaza con tu API Key de OpenAI
+            'Authorization': `OPENAI_API_KEY=your_openai_api_key` // Reemplaza con tu API Key de OpenAI
           }
         });
 
@@ -124,15 +124,16 @@ document.addEventListener('DOMContentLoaded', function() {
   // Manejo del menú de usuario
   if (userButton) {
     userButton.addEventListener('click', function() {
-      userDropdown.style.display = userDropdown.style.display === 'block' ? 'none' : 'block';
+      userDropdown.classList.toggle('show');
     });
 
     document.addEventListener('click', function(event) {
       if (!userMenu.contains(event.target)) {
-        userDropdown.style.display = 'none';
+        userDropdown.classList.remove('show');
       }
     });
   }
+
 
   // Obtener datos de clientes
   const clientesDiv = document.getElementById('clientes');

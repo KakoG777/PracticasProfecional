@@ -1,1 +1,7 @@
 OPENAI_API_KEY=your_openai_api_key
+
+DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=2032562885600
+DB_NAME=mi_sitio_web
+
